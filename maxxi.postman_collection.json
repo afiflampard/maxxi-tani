@@ -1,0 +1,86 @@
+{
+	"info": {
+		"_postman_id": "1eab228f-8f56-4af7-adde-ec05d09e2c63",
+		"name": "maxxi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\" : \"Fif\",\r\n    \"password\" : \"1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/token",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJGaWYiLCJSb2xlcyI6IlJPTEVfUk9MRV9BRE1JTiIsImV4cCI6MTYzNTY3NTQ4OCwiaWF0IjoxNjM1NjM5NDg4fQ.N7yrvvbP99mCM01XE3iTwgge8M-B0Yh_2ouxZxw7qFY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJGaWYiLCJpYXQiOjE2MzU2MTAzNzIsImV4cCI6MTYzNTY5Njc3Mn0.sAbAcGyYVPMrEB9gGUdVHc5AeFt57MJlcdMSusaIisuAq1xyFCoFQ_PULgAHoFVbKfh37Fd_BJtqmKRycXkMIA",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\" : \"fafi\",\r\n    \"email\" : \"afifm@gmail.com\",\r\n    \"password\" : \"1234\",\r\n    \"role\" : [\"admin\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/hello",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"hello"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
