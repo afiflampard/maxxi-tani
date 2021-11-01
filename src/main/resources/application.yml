@@ -1,5 +1,5 @@
 spring:
     datasource:
-        url: jdbc:postgresql://localhost:5432/dbmaxxi
-        username: postgres 
-        password: password
+        url: postgres://nwzhzgudmlvtms:548bea9cc407235ad2426f22cc98ee11b77e26478d23b70c8a10ac089215b7c5@ec2-35-169-43-5.compute-1.amazonaws.com:5432/d4o3cslrstbgfu
+        username: nwzhzgudmlvtms
+        password: 548bea9cc407235ad2426f22cc98ee11b77e26478d23b70c8a10ac089215b7c5
